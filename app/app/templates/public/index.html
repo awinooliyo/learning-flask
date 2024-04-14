@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <title>Index</title>
-</head>
-<body>
-    <h1 style="color:red">Index!</h1>
-    <p>This is the Index</p>
-    <img style="max-width: 500px;" src="{{url_for('static', filename='img/flask.png')}}" alt="">
+{% extends "public/templates/public_template.html" %}
 
-    <script src="{{url_for('static', filename='js/app.js')}}"></script>
-</body>
-</html>
+{% block title %}Index{% endblock %}
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Home</h1>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,3 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f1f1f1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
 }
+
+body>ul>li {
+    list-style-type: circle;
+    text-align: left;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+
