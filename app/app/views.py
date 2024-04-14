@@ -1,8 +1,10 @@
 from app import app
 
+from flask import render_template
+
 @app.route("/")
-def home():
-    return "Hello! this is the main page <h1>Hello</h1>"
+def index():
+    return render_template("public/index.html")
 
 @app.route("/about")
 def about():
